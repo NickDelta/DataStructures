@@ -40,7 +40,11 @@ int main(void)
 	while (fscanf(input,"%d%d", &p, &q) == 2) // M operations
 	{
 		if (find(id, p, q) == false) // if (id[p] == id[q]) continue; but edited to print to output
+		{
 			unite(id, p, q);
+			printf("%d-%d\n", p, q);
+		}
+			
 
 		fprintf(output, "%d\t%d\t", p, q);
 		for (int i = 0; i < N; i++)
