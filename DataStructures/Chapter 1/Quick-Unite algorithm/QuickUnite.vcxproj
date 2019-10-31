@@ -20,10 +20,10 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{C3B44F39-D8CE-4A86-B5C1-B8CFDF8B7654}</ProjectGuid>
-    <RootNamespace>QuickFindalgorithm</RootNamespace>
+    <ProjectGuid>{A0389F9B-93CD-488C-85B7-750FCD43FC50}</ProjectGuid>
+    <RootNamespace>QuickUnite</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Quick-Find</ProjectName>
+    <ProjectName>Quick-Unite</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -126,7 +126,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="quickfind.c" />
+    <ClCompile Include="quickunite.c" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
