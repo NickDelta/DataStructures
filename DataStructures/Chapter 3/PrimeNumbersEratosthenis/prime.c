@@ -2,13 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-#ifdef _WIN32
-	#include <windows.h>
-#elif defined __unix__
-	#include <unistd.h>
-#endif
-
 #define BENCH
+#define IF_ENABLED
 
 #ifndef BENCH
 	#define N 100000
@@ -24,7 +19,7 @@ int main(void)
 	 */
 #ifdef BENCH
 	FILE* output = fopen("out.csv", "w");
-	for (int N = 10000; N <= 1000000; N += 10000)
+	for (int N = 1000000; N <= 50000000; N += 1000000)
 #endif
 	{
 		int* a = malloc(N * sizeof(int));
@@ -41,13 +36,10 @@ int main(void)
 
 		for (int i = 2; i < N; i++)
 		{
-			//if (a[i]) //if i is a prime
+#ifdef IF_ENABLED
+			if (a[i]) //if i is a prime
+#endif
 			{
-			#if defined (BENCH) && defined (_WIN32)
-				//Sleep(1);
-            #elif defined (BENCH) && defined (__unix__)
-				sleep(0.001);
-			#endif
 				for (int j = i; j < N/i; j++) //for every multiple of it in our number range
 					a[i * j] = 0; //mark it as non-prime
 			}
