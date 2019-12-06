@@ -6,7 +6,7 @@
 #define IF_ENABLED
 
 #ifndef BENCH
-	#define N 100000
+	#define N 10
 #endif
 
 int main(void)
