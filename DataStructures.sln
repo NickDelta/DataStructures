@@ -27,6 +27,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InfixToPostfixAndCalculatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfixCalculator_CSharp", "InfixCalculator_CSharp\InfixCalculator_CSharp.csproj", "{B2C17B6E-B4F7-473C-8F04-1C7F0514523A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter 5", "Chapter 5", "{2781D585-D54B-441D-B05E-DA11CD684C6E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KnapsackProblem_SimpleRecursion", "DataStructures\Chapter 5\KnapsackProblem_SimpleRecursion\KnapsackProblem_SimpleRecursion.vcxproj", "{4151EBAB-1106-4D6E-8F48-EE042ED26FA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +133,16 @@ Global
 		{B2C17B6E-B4F7-473C-8F04-1C7F0514523A}.Release|x64.Build.0 = Release|Any CPU
 		{B2C17B6E-B4F7-473C-8F04-1C7F0514523A}.Release|x86.ActiveCfg = Release|Any CPU
 		{B2C17B6E-B4F7-473C-8F04-1C7F0514523A}.Release|x86.Build.0 = Release|Any CPU
+		{4151EBAB-1106-4D6E-8F48-EE042ED26FA3}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{4151EBAB-1106-4D6E-8F48-EE042ED26FA3}.Debug|x64.ActiveCfg = Debug|x64
+		{4151EBAB-1106-4D6E-8F48-EE042ED26FA3}.Debug|x64.Build.0 = Debug|x64
+		{4151EBAB-1106-4D6E-8F48-EE042ED26FA3}.Debug|x86.ActiveCfg = Debug|Win32
+		{4151EBAB-1106-4D6E-8F48-EE042ED26FA3}.Debug|x86.Build.0 = Debug|Win32
+		{4151EBAB-1106-4D6E-8F48-EE042ED26FA3}.Release|Any CPU.ActiveCfg = Release|Win32
+		{4151EBAB-1106-4D6E-8F48-EE042ED26FA3}.Release|x64.ActiveCfg = Release|x64
+		{4151EBAB-1106-4D6E-8F48-EE042ED26FA3}.Release|x64.Build.0 = Release|x64
+		{4151EBAB-1106-4D6E-8F48-EE042ED26FA3}.Release|x86.ActiveCfg = Release|Win32
+		{4151EBAB-1106-4D6E-8F48-EE042ED26FA3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -143,6 +157,7 @@ Global
 		{CFB1A358-AC75-4FD7-85CE-D0BD4717E4E8} = {886A4DC7-E1A1-4FEA-B24F-6CCE90A4DA43}
 		{FB742BC9-D6D0-4F5B-95A4-43FFF60EF540} = {E75351D7-B88A-408F-A2E5-E4823DA0A5F6}
 		{B2C17B6E-B4F7-473C-8F04-1C7F0514523A} = {E75351D7-B88A-408F-A2E5-E4823DA0A5F6}
+		{4151EBAB-1106-4D6E-8F48-EE042ED26FA3} = {2781D585-D54B-441D-B05E-DA11CD684C6E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3CEEE8A0-1C6A-4B6E-A871-19D5C69F3E3F}
