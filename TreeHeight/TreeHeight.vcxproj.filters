@@ -18,8 +18,5 @@
     <ClCompile Include="BinarySearchTree.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="height.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

@@ -27,19 +27,19 @@ node* create_balanced_tree(int* sorted_array, int array_size)
 
 	node* n = malloc(sizeof(struct node));
 	
-	float median = array_size / 2;
+	int median = (int)floor(array_size / 2);
 
-	n->data = sorted_array[(int)floor(median)];
-	n->left = create_balanced_tree(sorted_array,(int)floor(median));
-	n->right = create_balanced_tree(&sorted_array[(int)floor(median) + 1], array_size - (int)floor(median) - 1);
+	n->data = sorted_array[median];
+	n->left = create_balanced_tree(sorted_array,median);
+	n->right = create_balanced_tree(&sorted_array[median + 1], array_size - median - 1);
 
 	return n;
 }
 
 int main()
 {
-	int arr[] = { 5,6,9,13,14,15,16,18,19};
+	int arr[] = { 1,2,3,4};
 
-	node* tree = create_balanced_tree(arr, 9);
+	node* tree = create_balanced_tree(arr, 4);
 	print_postOrder(tree,0);
 }
